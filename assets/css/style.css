@@ -1,0 +1,708 @@
+/* --------------------------------------------------------------------------
+   1. VARIÁVEIS CSS (PALETA: CLÁSSICA E CONFIÁVEL - AZUL MARINHO E DOURADO)
+   Combinação de alto valor percebido e credibilidade:
+   - #1B3B6F (Azul Marinho): Estabilidade, segurança e profissionalismo (Header, Footer, Navbar)
+   - #EFA00B (Dourado/Mostarda): Call to Action, urgência e valor ("Agendar Visita", "Ver Detalhes", WhatsApp)
+   - #F4F4F9 (Cinza Muito Claro): Fundo da seção principal de cards e áreas alternadas
+   - #2D3142 (Chumbo Elegante): Textos principais, parágrafos e descrições confortáveis para leitura
+   -------------------------------------------------------------------------- */
+:root {
+    --cor-azul-marinho: #1B3B6F;         /* Cor Principal: Header, Footer, Navbar, Títulos */
+    --cor-dourado: #EFA00B;              /* Cor de Ação (CTA): Urgência e valor */
+    --cor-dourado-hover: #d88f06;        /* Dourado escurecido para hover */
+    --cor-fundo-secundario: #F4F4F9;    /* Fundo Secundário: Seção de cards e alternadas */
+    --cor-chumbo-texto: #2D3142;        /* Texto Principal: Leitura elegante */
+    
+    /* Cores de suporte */
+    --cor-branco: #FFFFFF;
+    --cor-borda-suave: #E2E8F0;
+    --cor-whats-icone: #EFA00B;          /* Ícone de WhatsApp na cor de ação */
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET BÁSICO E BOX MODEL
+   Aplicando box-sizing: border-box globalmente para que padding e border
+   não alterem a largura total dos elementos (conceito fundamental de Box Model).
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor-chumbo-texto);
+    background-color: var(--cor-branco);
+    line-height: 1.6;
+}
+
+/* Tipografia de Títulos com Azul Marinho Confiável */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-azul-marinho);
+}
+
+p {
+    color: var(--cor-chumbo-texto);
+}
+
+/* --------------------------------------------------------------------------
+   3. CABEÇALHO E NAVBAR (Azul Marinho #1B3B6F e Detalhes em Dourado #EFA00B)
+   -------------------------------------------------------------------------- */
+.bg-dark-custom {
+    background-color: var(--cor-azul-marinho) !important;
+}
+
+.navbar {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 2px solid rgba(239, 160, 11, 0.35); /* Filete dourado sutil */
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+    color: var(--cor-branco) !important;
+}
+
+.marca-destaque {
+    color: var(--cor-dourado);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #e2e8f0 !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--cor-dourado) !important;
+}
+
+/* Botão de contato rápido na Navbar em Dourado/Mostarda */
+.btn-nav-destaque {
+    background-color: var(--cor-dourado);
+    color: #ffffff !important;
+    border: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-nav-destaque:hover {
+    background-color: var(--cor-dourado-hover);
+    transform: translateY(-2px);
+    color: #ffffff !important;
+}
+
+.btn-nav-destaque i {
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   4. SEÇÃO HERO (BANNER PRINCIPAL) COM FLEXBOX
+   Nova imagem arquitetônica harmonizada com o céu azul crepúsculo e luzes douradas
+   -------------------------------------------------------------------------- */
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Camada com gradiente elegante em Azul Marinho (#1B3B6F) */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(27, 59, 111, 0.90) 0%, rgba(27, 59, 111, 0.72) 100%);
+    z-index: 1;
+}
+
+.hero-section .container {
+    z-index: 2;
+}
+
+.badge-cidade {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.hero-titulo {
+    font-size: 2.85rem;
+    line-height: 1.2;
+    color: var(--cor-branco);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.hero-subtitulo {
+    font-size: 1.2rem;
+    max-width: 750px;
+    color: #f1f5f9;
+}
+
+/* Botões do Hero com ação em Dourado/Mostarda */
+.btn-cta-primario {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-primario:hover {
+    background-color: var(--cor-dourado-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(239, 160, 11, 0.4);
+}
+
+.btn-cta-secundario {
+    border: 2px solid var(--cor-dourado);
+    color: var(--cor-dourado);
+    font-weight: 600;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-secundario:hover {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* --------------------------------------------------------------------------
+   5. SEÇÃO DE DIFERENCIAIS
+   Aplicando Box Model (padding, border, margin) e sombras sutis
+   -------------------------------------------------------------------------- */
+.secao-diferenciais {
+    background-color: var(--cor-branco);
+}
+
+.diferencial-item {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda-suave);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(27, 59, 111, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.diferencial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px -3px rgba(27, 59, 111, 0.12);
+    border-color: var(--cor-dourado);
+}
+
+.diferencial-icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(239, 160, 11, 0.15);
+    color: var(--cor-dourado);
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   6. CARDS DE IMÓVEIS (Fundo Secundário: Cinza Muito Claro #F4F4F9)
+   Classe CSS customizada e reutilizável: .meu-card-imovel
+   Botões de Ação em Dourado/Mostarda (#EFA00B): "Agendar Visita" / "Ver Detalhes"
+   -------------------------------------------------------------------------- */
+.secao-imoveis {
+    background-color: var(--cor-fundo-secundario); /* Cinza Muito Claro #F4F4F9 */
+}
+
+.subtitulo-categoria {
+    color: var(--cor-dourado);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.secao-titulo {
+    font-size: 2.2rem;
+    color: var(--cor-azul-marinho);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* Linha decorativa abaixo do título da seção em tom Dourado */
+.secao-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-dourado);
+    border-radius: 2px;
+}
+
+/* === CLASSE CUSTOMIZADA EXCLUSIVA DOS CARDS === */
+.meu-card-imovel {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda-suave);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(27, 59, 111, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito Hover do Card */
+.meu-card-imovel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 28px rgba(27, 59, 111, 0.14);
+    border-color: var(--cor-dourado);
+}
+
+/* Contêiner da Imagem do Card */
+.card-imovel-img-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-imovel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.meu-card-imovel:hover .card-imovel-img {
+    transform: scale(1.06);
+}
+
+/* Badges de Status estilizadas */
+.badge-status {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    color: var(--cor-branco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Badge de Venda em Azul Marinho */
+.badge-venda {
+    background-color: var(--cor-azul-marinho);
+}
+
+/* Badge de Aluguel em Dourado/Mostarda */
+.badge-aluguel {
+    background-color: var(--cor-dourado);
+}
+
+/* Corpo Interno do Card */
+.card-imovel-corpo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-imovel-localizacao {
+    font-size: 0.85rem;
+    color: var(--cor-chumbo-texto);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.icone-localizacao {
+    color: var(--cor-dourado);
+}
+
+.card-imovel-titulo {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--cor-azul-marinho);
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+}
+
+.card-imovel-preco {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--cor-azul-marinho);
+    margin-bottom: 1rem;
+}
+
+/* Atributos do Imóvel organizados com Flexbox */
+.card-imovel-atributos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: var(--cor-fundo-secundario);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    color: var(--cor-chumbo-texto);
+}
+
+.card-imovel-atributos span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-imovel-atributos i {
+    color: var(--cor-azul-marinho);
+}
+
+.card-imovel-rodape {
+    margin-top: auto;
+}
+
+/* Botões de Ação dos Cards em Dourado/Mostarda (#EFA00B) */
+.btn-card-acao {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-card-acao:hover {
+    background-color: var(--cor-dourado-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(239, 160, 11, 0.35);
+}
+
+/* Botão alternativo com borda dourada */
+.btn-card-outline {
+    border: 2px solid var(--cor-dourado);
+    color: var(--cor-azul-marinho);
+    font-weight: 600;
+    background: transparent;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.btn-card-outline:hover {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   7. SEÇÃO SOBRE NÓS
+   -------------------------------------------------------------------------- */
+.secao-sobre {
+    background-color: var(--cor-branco);
+}
+
+.sobre-imagem {
+    border: 4px solid var(--cor-branco);
+    box-shadow: 0 10px 25px rgba(27, 59, 111, 0.12);
+}
+
+.estatistica-box {
+    border: 1px solid var(--cor-borda-suave);
+    background-color: var(--cor-fundo-secundario);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.estatistica-numero {
+    color: var(--cor-dourado);
+    font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   8. SEÇÃO DE CONTATO E INTERAÇÃO (Fundo Secundário #F4F4F9)
+   -------------------------------------------------------------------------- */
+.secao-contato {
+    background-color: var(--cor-fundo-secundario);
+}
+
+.formulario-card,
+.contato-info-box {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda-suave);
+}
+
+.form-control,
+.form-select {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--cor-borda-suave);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--cor-chumbo-texto);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--cor-dourado);
+    box-shadow: 0 0 0 0.25rem rgba(239, 160, 11, 0.25);
+}
+
+.btn-enviar-formulario {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-enviar-formulario:hover {
+    background-color: var(--cor-dourado-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(239, 160, 11, 0.3);
+}
+
+.info-icone {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(239, 160, 11, 0.15);
+    color: var(--cor-dourado);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+}
+
+/* Destaque WhatsApp com o Ícone em Dourado/Mostarda */
+.bloco-whatsapp-destaque {
+    background-color: #fff9ed;
+    border: 1px dashed var(--cor-dourado);
+}
+
+.btn-whatsapp {
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--cor-dourado-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   9. RODAPÉ (FOOTER) - Azul Marinho #1B3B6F e Detalhes Dourados #EFA00B
+   Informações e textos claros e com alto contraste
+   -------------------------------------------------------------------------- */
+.rodape-principal {
+    background-color: var(--cor-azul-marinho);
+    color: #f1f5f9; /* Texto base bem claro e nítido */
+}
+
+/* Linha divisória com contraste suave */
+.rodape-divisor {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Textos informativos e descrições do rodapé */
+.rodape-texto {
+    color: #cbd5e1; /* Cinza bem claro para leitura sobre o azul marinho */
+    line-height: 1.6;
+}
+
+/* Links de navegação rápida */
+.links-rodape a {
+    color: #e2e8f0 !important;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.links-rodape a:hover {
+    color: var(--cor-dourado) !important;
+    padding-left: 6px;
+}
+
+/* Copyright e créditos no rodapé */
+.rodape-copyright {
+    color: #94a3b8;
+}
+
+.rodape-copyright strong {
+    color: #ffffff;
+}
+
+/* Container Flexbox para alinhar os botões sociais */
+.redes-sociais-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Botões circulares para Facebook e Instagram */
+.link-rede-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--cor-branco);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.link-facebook:hover {
+    background-color: #1877f2;
+    border-color: #1877f2;
+    transform: translateY(-3px);
+}
+
+.link-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    border-color: transparent;
+    transform: translateY(-3px);
+}
+
+/* Botão de WhatsApp no rodapé com destaque em Dourado/Mostarda */
+.btn-whatsapp-rodape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-dourado);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(239, 160, 11, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whatsapp-rodape:hover {
+    background-color: var(--cor-dourado-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(239, 160, 11, 0.45);
+}
+
+.btn-whatsapp-rodape i {
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   10. MEDIA QUERIES CUSTOMIZADAS (REQUISITO DA AVALIAÇÃO)
+   Ajustes manuais para dispositivos móveis além do Grid Bootstrap
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 991px) {
+    .hero-titulo {
+        font-size: 2.3rem;
+    }
+
+    .hero-section {
+        min-height: 70vh;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .card-imovel-img-container {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-titulo {
+        font-size: 1.95rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 1.05rem;
+    }
+
+    .secao-titulo {
+        font-size: 1.8rem;
+    }
+
+    .formulario-card,
+    .contato-info-box {
+        padding: 1.5rem !important;
+    }
+
+    .card-imovel-atributos {
+        font-size: 0.78rem;
+        padding: 8px 10px;
+    }
+
+    .redes-sociais-container {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-titulo {
+        font-size: 1.65rem;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-botoes .btn {
+        width: 100%;
+    }
+
+    .card-imovel-corpo {
+        padding: 1.2rem;
+    }
+
+    .card-imovel-img-container {
+        height: 190px;
+    }
+
+    .btn-whatsapp-rodape {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="São Miguel Imóveis - As melhores opções de casas, apartamentos e terrenos em São Miguel do Oeste e região com atendimento personalizado e segurança jurídica.">
+    <title>São Miguel Imóveis | Encontre seu Lar no Extremo Oeste SC</title>
+
+    <!-- Google Fonts (Poppins e Open Sans para boa legibilidade e design moderno) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CDN (Requisito da UC: Inclusão do Bootstrap 5 via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CDN (Para ícones de detalhes, contato e redes sociais) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Customizado (Organizado dentro de assets/css/ com paleta personalizada) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top shadow-sm">
+            <div class="container">
+                <!-- Logotipo e nome da Imobiliária -->
+                <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                    <i class="bi bi-buildings-fill marca-destaque fs-3 me-2"></i>
+                    <span class="fw-bold tracking-tight">São Miguel <span class="marca-destaque">Imóveis</span></span>
+                </a>
+
+                <!-- Botão Hambúrguer para telas menores (Mobile / Tablet) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links de Navegação do Menu -->
+                <div class="collapse navbar-collapse" id="menuNavegacao">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#diferenciais">Diferenciais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imoveis">Imóveis em Destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <!-- Botão de Ação Rápida no Menu (WhatsApp direto) -->
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="btn btn-nav-destaque btn-sm px-3 py-2 shadow-sm" href="https://wa.me/5549999999999?text=Olá,%20gostaria%20de%20informações%20sobre%20imóveis%20em%20São%20Miguel%20do%20Oeste" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp me-1"></i> (49) 99999-9999
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section id="inicio" class="hero-section text-center">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative py-5">
+                <span class="badge badge-cidade px-3 py-2 fs-6 mb-3 text-uppercase">São Miguel do Oeste - SC</span>
+                <h1 class="hero-titulo display-4 fw-bold mb-3">Encontre o Imóvel Perfeito para Sua Família</h1>
+                <p class="hero-subtitulo lead mx-auto mb-4">
+                    As melhores casas, apartamentos e terrenos no Extremo Oeste Catarinense com consultoria especializada, segurança e transparência.
+                </p>
+                <div class="hero-botoes d-flex justify-content-center flex-wrap gap-3">
+                    <a href="#imoveis" class="btn btn-cta-primario btn-lg px-4 shadow">Ver Imóveis Disponíveis</a>
+                    <a href="#contato" class="btn btn-cta-secundario btn-lg px-4"><i class="bi bi-calendar-check me-1"></i> Agendar Visita</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciais" class="secao-diferenciais py-5">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="diferencial-item p-4 h-100">
+                            <div class="diferencial-icone mb-3">
+                                <i class="bi bi-shield-check fs-1"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Segurança Jurídica</h3>
+                            <p class="text-muted mb-0">Contratos auditados e documentação 100% regularizada para sua total tranquilidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="diferencial-item p-4 h-100">
+                            <div class="diferencial-icone mb-3">
+                                <i class="bi bi-geo-alt-fill fs-1"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Especialistas em SMOeste</h3>
+                            <p class="text-muted mb-0">Conhecimento aprofundado dos bairros mais valorizados da nossa cidade e região.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="diferencial-item p-4 h-100">
+                            <div class="diferencial-icone mb-3">
+                                <i class="bi bi-headset fs-1"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">Atendimento Humanizado</h3>
+                            <p class="text-muted mb-0">Acompanhamento de ponta a ponta, desde a primeira visita até a entrega das chaves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="imoveis" class="secao-imoveis py-5">
+            <div class="container">
+                <!-- Título e Subtítulo da Seção -->
+                <div class="text-center mb-5">
+                    <span class="subtitulo-categoria small">Oportunidades Selecionadas</span>
+                    <h2 class="secao-titulo fw-bold mt-1">Imóveis em Destaque</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">Confira as melhores ofertas disponíveis para compra e locação em São Miguel do Oeste e arredores.</p>
+                </div>
+
+                <!-- Grid do Bootstrap combinando com a classe customizada .meu-card-imovel -->
+                <div class="row g-4">
+
+                    <!-- Card 1: Casa Alto Padrão - Bairro Agostini -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Casa Moderna no Bairro Agostini" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-venda">Venda</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Bairro Agostini, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Casa Moderna com 3 Suítes e Piscina</h3>
+                                <p class="card-imovel-preco">R$ 890.000,00</p>
+                                
+                                <!-- Detalhes do imóvel organizados com Flexbox -->
+                                <div class="card-imovel-atributos">
+                                    <span title="Dormitórios"><i class="bi bi-door-open-fill"></i> 3 Quartos</span>
+                                    <span title="Banheiros"><i class="bi bi-droplet-fill"></i> 3 Banheiros</span>
+                                    <span title="Garagem"><i class="bi bi-car-front-fill"></i> 2 Vagas</span>
+                                    <span title="Área construída"><i class="bi bi-arrows-fullscreen"></i> 220 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-calendar-check me-1"></i> Agendar Visita</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 2: Apartamento no Centro -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Apartamento no Centro de São Miguel do Oeste" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-venda">Venda</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Centro, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Apartamento Edifício Horizonte com Sacada</h3>
+                                <p class="card-imovel-preco">R$ 480.000,00</p>
+
+                                <div class="card-imovel-atributos">
+                                    <span title="Dormitórios"><i class="bi bi-door-open-fill"></i> 2 Quartos</span>
+                                    <span title="Banheiros"><i class="bi bi-droplet-fill"></i> 2 Banheiros</span>
+                                    <span title="Garagem"><i class="bi bi-car-front-fill"></i> 1 Vaga</span>
+                                    <span title="Área construída"><i class="bi bi-arrows-fullscreen"></i> 95 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-eye me-1"></i> Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3: Sobrado - Bairro São Gotardo -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Sobrado no Bairro São Gotardo" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-aluguel">Aluguel</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Bairro São Gotardo, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Sobrado Aconchegante com Quintal</h3>
+                                <p class="card-imovel-preco">R$ 2.400,00 <span class="fs-6 fw-normal text-muted">/mês</span></p>
+
+                                <div class="card-imovel-atributos">
+                                    <span title="Dormitórios"><i class="bi bi-door-open-fill"></i> 3 Quartos</span>
+                                    <span title="Banheiros"><i class="bi bi-droplet-fill"></i> 2 Banheiros</span>
+                                    <span title="Garagem"><i class="bi bi-car-front-fill"></i> 2 Vagas</span>
+                                    <span title="Área construída"><i class="bi bi-arrows-fullscreen"></i> 140 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-calendar-check me-1"></i> Agendar Visita</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 4: Terreno Residencial - Bairro Salete -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Terreno no Bairro Salete" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-venda">Venda</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Bairro Salete, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Terreno Plano Pronto para Construir</h3>
+                                <p class="card-imovel-preco">R$ 210.000,00</p>
+
+                                <div class="card-imovel-atributos">
+                                    <span title="Tipo"><i class="bi bi-tree-fill"></i> Lote Residencial</span>
+                                    <span title="Dimensão"><i class="bi bi-rulers"></i> 15 x 30 m</span>
+                                    <span title="Sol"><i class="bi bi-sun-fill"></i> Face Norte</span>
+                                    <span title="Área total"><i class="bi bi-arrows-fullscreen"></i> 450 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-eye me-1"></i> Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 5: Apartamento Studio no Centro -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Apartamento Studio no Centro" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-aluguel">Aluguel</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Centro, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Studio Mobiliado Próximo à Praça Walnir Bottaro</h3>
+                                <p class="card-imovel-preco">R$ 1.550,00 <span class="fs-6 fw-normal text-muted">/mês</span></p>
+
+                                <div class="card-imovel-atributos">
+                                    <span title="Dormitórios"><i class="bi bi-door-open-fill"></i> 1 Quarto</span>
+                                    <span title="Banheiros"><i class="bi bi-droplet-fill"></i> 1 Banheiro</span>
+                                    <span title="Garagem"><i class="bi bi-car-front-fill"></i> 1 Vaga</span>
+                                    <span title="Área construída"><i class="bi bi-arrows-fullscreen"></i> 48 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-calendar-check me-1"></i> Agendar Visita</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 6: Chácara Urbana na Linha Guamerim -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="meu-card-imovel h-100">
+                            <div class="card-imovel-img-container">
+                                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80" alt="Chácara na Linha Guamerim" class="card-imovel-img" loading="lazy">
+                                <span class="badge-status badge-venda">Venda</span>
+                            </div>
+                            <div class="card-imovel-corpo">
+                                <span class="card-imovel-localizacao">
+                                    <i class="bi bi-geo-alt-fill icone-localizacao me-1"></i>Linha Guamerim, São Miguel do Oeste
+                                </span>
+                                <h3 class="card-imovel-titulo">Chácara Urbana com Ampla Área de Lazer</h3>
+                                <p class="card-imovel-preco">R$ 750.000,00</p>
+
+                                <div class="card-imovel-atributos">
+                                    <span title="Dormitórios"><i class="bi bi-door-open-fill"></i> 4 Quartos</span>
+                                    <span title="Banheiros"><i class="bi bi-droplet-fill"></i> 3 Banheiros</span>
+                                    <span title="Garagem"><i class="bi bi-car-front-fill"></i> 4 Vagas</span>
+                                    <span title="Área do terreno"><i class="bi bi-arrows-fullscreen"></i> 1.200 m²</span>
+                                </div>
+                                <hr class="my-3">
+                                <div class="card-imovel-rodape">
+                                    <a href="#contato" class="btn-card-acao w-100"><i class="bi bi-eye me-1"></i> Ver Detalhes</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div> <!-- Fim da .row de cards -->
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-sobre py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Equipe da São Miguel Imóveis" class="img-fluid rounded-4 shadow-sm sobre-imagem">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <span class="subtitulo-categoria small">Nossa História</span>
+                        <h2 class="fw-bold mb-3">Tradição e Confiança no Extremo Oeste de Santa Catarina</h2>
+                        <p class="text-secondary leading-relaxed">
+                            Fundada com o propósito de conectar famílias ao seu lugar ideal, a <strong>São Miguel Imóveis</strong> atua em São Miguel do Oeste e municípios vizinhos com seriedade, ética e profundo conhecimento do mercado local.
+                        </p>
+                        <p class="text-secondary leading-relaxed">
+                            Nossa equipe de corretores credenciados está pronta para orientar você em cada etapa da negociação — da avaliação imobiliária até a conclusão do financiamento bancário.
+                        </p>
+                        <div class="row g-3 pt-2">
+                            <div class="col-6">
+                                <div class="estatistica-box">
+                                    <h4 class="estatistica-numero mb-0">+10 Anos</h4>
+                                    <small class="text-muted">No Mercado de SMO</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="estatistica-box">
+                                    <h4 class="estatistica-numero mb-0">+500</h4>
+                                    <small class="text-muted">Imóveis Negociados</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-contato py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="subtitulo-categoria small">Fale Conosco</span>
+                    <h2 class="secao-titulo fw-bold mt-1">Entre em Contato</h2>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">
+                        Tem interesse em algum imóvel ou quer anunciar sua propriedade? Envie sua mensagem que retornaremos rapidamente.
+                    </p>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Formulário de Contato -->
+                    <div class="col-12 col-lg-7">
+                        <div class="formulario-card p-4 p-md-5 shadow-sm rounded-4">
+                            <h3 class="h4 fw-bold mb-4">Envie uma Mensagem</h3>
+                            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');">
+                                <div class="row g-3">
+                                    <!-- Campo Nome -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="campo-nome" class="form-label fw-semibold">Nome Completo <span class="text-danger">*</span></label>
+                                        <input type="text" id="campo-nome" class="form-control" placeholder="Ex: Cristiano Barichello" required>
+                                    </div>
+
+                                    <!-- Campo E-mail -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="campo-email" class="form-label fw-semibold">E-mail <span class="text-danger">*</span></label>
+                                        <input type="email" id="campo-email" class="form-control" placeholder="nome@exemplo.com" required>
+                                    </div>
+
+                                    <!-- Campo Telefone -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="campo-telefone" class="form-label fw-semibold">Telefone / WhatsApp <span class="text-danger">*</span></label>
+                                        <input type="tel" id="campo-telefone" class="form-control" placeholder="(49) 99999-9999" required>
+                                    </div>
+
+                                    <!-- Campo Assunto / Tipo de Interesse -->
+                                    <div class="col-12 col-md-6">
+                                        <label for="campo-assunto" class="form-label fw-semibold">Qual seu Interesse?</label>
+                                        <select id="campo-assunto" class="form-select">
+                                            <option value="comprar" selected>Comprar um Imóvel</option>
+                                            <option value="alugar">Alugar um Imóvel</option>
+                                            <option value="anunciar">Anunciar meu Imóvel</option>
+                                            <option value="duvidas">Outras Dúvidas</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Campo Mensagem -->
+                                    <div class="col-12">
+                                        <label for="campo-mensagem" class="form-label fw-semibold">Mensagem <span class="text-danger">*</span></label>
+                                        <textarea id="campo-mensagem" class="form-control" rows="4" placeholder="Olá! Gostaria de mais informações sobre o imóvel no Bairro Agostini..." required></textarea>
+                                    </div>
+
+                                    <!-- Botão de Envio -->
+                                    <div class="col-12 pt-2">
+                                        <button type="submit" class="btn btn-enviar-formulario w-100 py-3 shadow-sm">
+                                            <i class="bi bi-send-fill me-2"></i> Enviar Mensagem
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Informações de Atendimento e Localização da Imobiliária -->
+                    <div class="col-12 col-lg-5">
+                        <div class="contato-info-box p-4 p-md-5 shadow-sm rounded-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="h4 fw-bold mb-4">Informações de Atendimento</h3>
+                                
+                                <div class="info-item d-flex align-items-start mb-4">
+                                    <div class="info-icone me-3">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Nosso Endereço</h4>
+                                        <p class="text-muted mb-0">Rua Marcílio Dias, 1200 - Centro<br>São Miguel do Oeste - SC, CEP 89900-000</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item d-flex align-items-start mb-4">
+                                    <div class="info-icone me-3">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Telefone Fixo</h4>
+                                        <p class="text-muted mb-0">(49) 3622-1020</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-item d-flex align-items-start mb-4">
+                                    <div class="info-icone me-3">
+                                        <i class="bi bi-clock-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Horário de Funcionamento</h4>
+                                        <p class="text-muted mb-0">Segunda a Sexta: 08:00 às 18:00<br>Sábados: 08:30 às 12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chamada direta para o WhatsApp -->
+                            <div class="bloco-whatsapp-destaque p-3 rounded-3 text-center mt-3">
+                                <p class="small fw-semibold text-success mb-2">Prefere atendimento instantâneo?</p>
+                                <a href="https://wa.me/5549999999999?text=Olá,%20gostaria%20de%20falar%20com%20um%20corretor" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100 fw-bold">
+                                    <i class="bi bi-whatsapp me-2"></i> Chamar no WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-principal pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 pb-4 rodape-divisor">
+                <!-- Coluna 1: Sobre a Imobiliária -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-buildings-fill marca-destaque fs-3 me-2"></i>
+                        <span class="fs-5 fw-bold text-white">São Miguel <span class="marca-destaque">Imóveis</span></span>
+                    </div>
+                    <p class="rodape-texto small">
+                        Sua parceira de confiança na compra, venda e locação de imóveis em São Miguel do Oeste e Extremo Oeste Catarinense. Segurança, seriedade e dedicação em cada negociação.
+                    </p>
+                    <p class="rodape-texto small mb-0">
+                        <i class="bi bi-geo-alt marca-destaque me-1"></i> São Miguel do Oeste - SC
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 marca-destaque">Navegação Rápida</h5>
+                    <ul class="list-unstyled links-rodape">
+                        <li class="mb-2"><a href="#inicio" class="text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="#diferenciais" class="text-decoration-none">Diferenciais</a></li>
+                        <li class="mb-2"><a href="#imoveis" class="text-decoration-none">Imóveis em Destaque</a></li>
+                        <li class="mb-2"><a href="#sobre" class="text-decoration-none">Quem Somos</a></li>
+                        <li class="mb-2"><a href="#contato" class="text-decoration-none">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais e Botão WhatsApp (Requisito Obrigatório) -->
+                <div class="col-12 col-lg-5">
+                    <h5 class="fw-bold mb-3 marca-destaque">Conecte-se Conosco</h5>
+                    <p class="rodape-texto small mb-3">Acompanhe nossas novidades nas redes sociais ou converse diretamente com nossa equipe:</p>
+
+                    <!-- Lista de Redes Sociais com Flexbox -->
+                    <div class="redes-sociais-container d-flex flex-wrap align-items-center gap-3 mb-3">
+                        <!-- Facebook -->
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="link-rede-social link-facebook" aria-label="Acessar nossa página no Facebook" title="Facebook">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="link-rede-social link-instagram" aria-label="Acessar nosso perfil no Instagram" title="Instagram">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+
+                        <!-- Botão com Link Direto para o WhatsApp -->
+                        <a href="https://wa.me/5549999999999?text=Olá,%20vim%20pelo%20site%20da%20São%20Miguel%20Imóveis" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-rodape fw-bold" aria-label="Conversar pelo WhatsApp">
+                            <i class="bi bi-whatsapp me-2 fs-5"></i> Fale no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row pt-4 text-center">
+                <div class="col-12">
+                    <p class="small rodape-copyright mb-1">
+                        &copy; 2026 <strong>São Miguel Imóveis</strong> - Todos os direitos reservados.
+                    </p>
+                    <p class="small rodape-copyright mb-0">
+                        CRECI/SC 0000-J | Excelência e transparência em negócios imobiliários no Extremo Oeste Catarinense.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS (Inclui Popper para Navbar toggler e interações) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Script Customizado Opcional -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
