@@ -13,10 +13,13 @@
     --cor-fundo-secundario: #F4F4F9;    /* Fundo Secundário: Seção de cards e alternadas */
     --cor-chumbo-texto: #2D3142;        /* Texto Principal: Leitura elegante */
     
+    /* Cores do WhatsApp (Verde Oficial) */
+    --cor-whatsapp: #25D366;            /* Verde clássico do WhatsApp */
+    --cor-whatsapp-hover: #1EB954;      /* Verde escuro no hover */
+    
     /* Cores de suporte */
     --cor-branco: #FFFFFF;
     --cor-borda-suave: #E2E8F0;
-    --cor-whats-icone: #EFA00B;          /* Ícone de WhatsApp na cor de ação */
 }
 
 /* --------------------------------------------------------------------------
@@ -89,19 +92,20 @@ p {
     color: var(--cor-dourado) !important;
 }
 
-/* Botão de contato rápido na Navbar em Dourado/Mostarda */
+/* Botão de contato rápido na Navbar em Verde WhatsApp */
 .btn-nav-destaque {
-    background-color: var(--cor-dourado);
+    background-color: var(--cor-whatsapp);
     color: #ffffff !important;
     border: none;
     font-weight: 600;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-nav-destaque:hover {
-    background-color: var(--cor-dourado-hover);
+    background-color: var(--cor-whatsapp-hover);
     transform: translateY(-2px);
     color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.35);
 }
 
 .btn-nav-destaque i {
@@ -508,25 +512,28 @@ p {
     font-size: 1.25rem;
 }
 
-/* Destaque WhatsApp com o Ícone em Dourado/Mostarda */
+/* Destaque WhatsApp com o Verde Oficial */
 .bloco-whatsapp-destaque {
-    background-color: #fff9ed;
-    border: 1px dashed var(--cor-dourado);
+    background-color: #e8f8ee;
+    border: 1px dashed var(--cor-whatsapp);
 }
 
 .btn-whatsapp {
-    background-color: var(--cor-dourado);
+    background-color: var(--cor-whatsapp);
     color: #ffffff;
     border: none;
     padding: 0.75rem 1.2rem;
     border-radius: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
 }
 
 .btn-whatsapp:hover {
-    background-color: var(--cor-dourado-hover);
+    background-color: var(--cor-whatsapp-hover);
     color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
 }
 
 /* --------------------------------------------------------------------------
@@ -605,25 +612,26 @@ p {
     transform: translateY(-3px);
 }
 
-/* Botão de WhatsApp no rodapé com destaque em Dourado/Mostarda */
+/* Botão de WhatsApp no rodapé em Verde Oficial */
 .btn-whatsapp-rodape {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-dourado);
+    background-color: var(--cor-whatsapp);
     color: #ffffff;
     padding: 0.6rem 1.2rem;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(239, 160, 11, 0.3);
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-whatsapp-rodape:hover {
-    background-color: var(--cor-dourado-hover);
+    background-color: var(--cor-whatsapp-hover);
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(239, 160, 11, 0.45);
+    box-shadow: 0 6px 14px rgba(37, 211, 102, 0.45);
 }
 
 .btn-whatsapp-rodape i {
