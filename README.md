@@ -6,6 +6,14 @@ Trata-se de uma **Landing Page completa e responsiva** para uma imobiliária fic
 
 ---
 
+## 🌐 Acesso Online para Testes (GitHub Pages)
+
+O projeto está publicado e disponível para visualização e testes em qualquer dispositivo através do link:
+
+👉 **[https://crissbarichello.github.io/Projeto_integrador_2.0/](https://crissbarichello.github.io/Projeto_integrador_2.0/)**
+
+---
+
 ## 🎨 Paleta de Cores Oficial (Clássica e Confiável: Azul Marinho e Dourado)
 
 A identidade visual foi definida utilizando variáveis CSS no `:root`, garantindo máxima credibilidade e foco nas conversões:
@@ -50,13 +58,13 @@ Projeto_integrador_2.0/
 
 ---
 
-## 💻 Como Executar o Projeto
+## 💻 Como Executar o Projeto Localmente
 
-Como se trata de uma aplicação puramente estática, sem necessidade de servidores ou compiladores (Node.js/Webpack):
+Caso deseje executar os arquivos em seu próprio ambiente:
 
 1. Baixe ou clone este repositório.
 2. Dê um duplo clique no arquivo `index.html` ou abra-o em qualquer navegador web (Google Chrome, Firefox, Microsoft Edge).
-3. Para testar a responsividade, basta redimensionar a janela do navegador ou pressionar `F12` e alternar para a visualização de dispositivos móveis.
+3. Para testar a responsividade, basta redimensionar a janela do navegador ou pressionar `F12` e alternar para a visualização mobile.
 
 ---
 
